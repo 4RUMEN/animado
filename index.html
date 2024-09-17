@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocolos de IATF com Progestágenos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Protocolos de IATF com Progestágenos</h1>
+    </header>
+    <main>
+        <section class="timeline">
+            <div class="timeline-event" id="day-0">
+                <h2>Dia 0 (D0)</h2>
+                <p>Inserção do dispositivo de progestágeno e aplicação de 2 mg de Benzoato de Estradiol (BE).</p>
+                <button class="animate-btn" data-effect="progestageno">Ver Efeito do Progestágeno</button>
+                <button class="animate-btn" data-effect="estradiol">Ver Efeito do Estradiol</button>
+            </div>
+            <div class="timeline-event" id="day-7-8">
+                <h2>Dia 7 ou 8 (D7/D8)</h2>
+                <p>Retirada do dispositivo e aplicação de Prostaglandina F2α (PGF2α).</p>
+                <button class="animate-btn" data-effect="pgf2a">Ver Efeito do PGF2α</button>
+            </div>
+            <div class="timeline-event" id="day-8-9">
+                <h2>Dia 8 ou 9 (24h após retirada do dispositivo)</h2>
+                <p>Aplicação de 1 mg de Benzoato de Estradiol (BE).</p>
+                <button class="animate-btn" data-effect="estradiol">Ver Efeito do Estradiol</button>
+            </div>
+            <div class="timeline-event" id="day-10-11">
+                <h2>Dia 10 ou 11 (52 a 56 horas após a remoção do dispositivo)</h2>
+                <p>Inseminação Artificial em Tempo Fixo (IATF).</p>
+            </div>
+        </section>
+        <div id="animation" class="animation">
+            <div id="progestageno" class="effect">Efeito do Progestágeno</div>
+            <div id="estradiol" class="effect">Efeito do Estradiol</div>
+            <div id="pgf2a" class="effect">Efeito do PGF2α</div>
+        </div>
+        <button id="info-btn">Mostrar Função dos Hormônios</button>
+        <section id="info" class="info">
+            <h3>Função dos Hormônios</h3>
+            <ul>
+                <li><strong>Progestágeno:</strong> Simula a fase luteínica, inibe a ovulação enquanto está presente.</li>
+                <li><strong>Benzoato de Estradiol (BE):</strong> Promove a regressão do corpo lúteo, estimula o desenvolvimento de um novo folículo.</li>
+                <li><strong>Prostaglandina F2α (PGF2α):</strong> Induz a regressão luteínica e promove o ambiente hormonal para a ovulação.</li>
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
